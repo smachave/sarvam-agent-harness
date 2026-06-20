@@ -53,7 +53,7 @@ curl --location 'http://0.0.0.0:4000/v1/chat/completions' \
 }'
 ```
 
-## Pi Agent Configuration
+## [Pi Agent](https://pi.dev/) Configuration
 
 This project integrates with Pi Agent for enhanced AI capabilities. Pi Agent is configured through the `~/.pi/agent/models.json` file, which defines available AI providers and models.
 
