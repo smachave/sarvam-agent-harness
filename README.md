@@ -33,7 +33,7 @@ A proxy harness for setting up and running agents with Sarvam AI models through 
    litellm --config litellm.yaml --port 4000
    ```
 
-The `litellm.yaml` file contains your Sarvam model configuration. The user will manage the rest.
+The `litellm.yaml` file contains your Sarvam model configuration.
 
 ## Usage Examples
 
@@ -61,20 +61,22 @@ For example, here's the actual Sarvam provider configuration from your `~/.pi/ag
 
 ```json
 {
-  "sarvam": {
-    "api": "openai-completions",
-    "apiKey": "sk-1234",
-    "baseUrl": "http://localhost:4000/v1",
-    "models": [
-      {
-        "id": "sarvam-105b",
-        "name": "Sarvam 105B"
-      },
-      {
-        "id": "sarvam-30b",
-        "name": "Sarvam 30B"
-      }
-    ]
+  "providers": {
+    "sarvam": {
+      "api": "openai-completions",
+      "apiKey": "sk-1234",
+      "baseUrl": "http://localhost:4000/v1",
+      "models": [
+        {
+          "id": "sarvam-105b",
+          "name": "Sarvam 105B"
+        },
+        {
+          "id": "sarvam-30b",
+          "name": "Sarvam 30B"
+        }
+      ]
+    }
   }
 }
 ```
